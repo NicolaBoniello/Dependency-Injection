@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/controller_name")
 public class MyController {
 
-    MyService myService;
+   private MyService myService;
     public MyController(MyService myService){
         this.myService=myService;
         System.out.println("MyController constructor has been called");
